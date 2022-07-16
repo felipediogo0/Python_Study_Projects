@@ -2,6 +2,9 @@ from random import randint
 from time import sleep
 lista = list()
 jogos = list()
+print('-' * 30)
+print('      Joga na Mega Sena      ')
+print('-' * 30)
 quant = int(input('Quanto jogos vamos fazer?'))
 tot = 1
 while tot <= quant:
@@ -17,6 +20,8 @@ while tot <= quant:
     jogos.append(lista[:])
     lista.clear()
     tot += 1
+print('-=' * 3, f' SORTEANDO {quant} JOGOS', '-=' * 3)
 for i, l in enumerate(jogos):
     print(f'Os números sorteados foram {l}')
     sleep(1)
+print('-=' * 5, '< BOA SORTE! >', '-=' * 5)
