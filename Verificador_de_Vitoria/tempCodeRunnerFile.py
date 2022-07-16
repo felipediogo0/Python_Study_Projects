@@ -1,3 +1,2 @@
 
-vitoria = list()
-numerodejogadas = int(inp
+    numerossorteados.sort()

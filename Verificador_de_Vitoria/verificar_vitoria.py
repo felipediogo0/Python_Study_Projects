@@ -1,10 +1,9 @@
 from random import randint
 
-jogo = [1, 2]
+jogo = list([1, 2])
 numerossorteados = list()
-vitoria = list()
-verificarsorteio = list()
-while verificarsorteio != jogo:
+i = 0
+while i <= 1:
     cont = 0
     while True:
         sorteio = randint(1, 4)
@@ -14,7 +13,9 @@ while verificarsorteio != jogo:
         if cont >= 2:
             break
     numerossorteados.sort()
-    vitoria.append(numerossorteados[:])
-    numerossorteados.clear()
-    print(vitoria)
-    verificarsorteio += vitoria
+    print(numerossorteados)
+    if numerossorteados != jogo:
+        numerossorteados.clear()
+    else:
+        print('Venceu!')
+        break
