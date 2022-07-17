@@ -25,4 +25,3 @@ for i, l in enumerate(jogos):
     print(f'Os números sorteados foram {l}')
     sleep(1)
 print('-=' * 5, '< BOA SORTE! >', '-=' * 5)
-
