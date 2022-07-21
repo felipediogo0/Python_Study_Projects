@@ -3,14 +3,14 @@ from time import sleep
 
 
 class classe:
-    jogo = list([1, 2, 3, 4, 5])
+    jogo = list([8, 10, 12, 13, 15])
     numerossorteados = list()
     y = 0
     i = 0
     while i <= 1:
         cont = 0
         while True:
-            sorteio = randint(1, 10)
+            sorteio = randint(1, 25)
             if sorteio not in numerossorteados:
                 numerossorteados.append(sorteio)
                 cont += 1
